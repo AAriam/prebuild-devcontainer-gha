@@ -1,0 +1,13 @@
+{
+    "name": "devcontainers-ci",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": ".",
+        "cacheFrom": "type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha:cache"
+        // "cacheFrom": "type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha"
+    },
+    "remoteUser": "root",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": "latest"
+    }
+}
