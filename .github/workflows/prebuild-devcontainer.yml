@@ -35,7 +35,8 @@ jobs:
           uses: devcontainers/ci@v0.3
           with:
             imageName: ghcr.io/bascodes/prebuild-devcontainer-gha
-            cacheTo: type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha:cache
+            # cacheTo: type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha:cache
+            # cacheTo: type=inline
             runCmd: sleep 1
             push: always
             platform: linux/amd64,linux/arm64
