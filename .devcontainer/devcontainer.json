@@ -3,8 +3,8 @@
     "build": {
         "dockerfile": "./Dockerfile",
         "context": ".",
-        "cacheFrom": "type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha:cache"
-        // "cacheFrom": "type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha"
+        // "cacheFrom": "type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha:cache"
+        "cacheFrom": "type=registry,ref=ghcr.io/bascodes/prebuild-devcontainer-gha:latest"
     },
     "remoteUser": "root",
     "features": {
